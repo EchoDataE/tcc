@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html> 
+    <head> 
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Banca do Rock</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="_css/index.css" > 
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <ul class="cabeçalho">
+            <li class="logotipo" ><a href="index.html"><img src="_img/Capturar.PNG" class="logotipo" ></a></li>
+            <li><a href="cad.php" class="butao">Cadastrar</a></li>
+            <li><a href="log.php">Entrar</a></li>
+            <li><a href="https://echodatatcc.github.io/TCC/" target="blank" >Sobre nós</a></li>
+        </ul>
+        <div class="row"><div class="fachada">
+            <div class="left_col"></div></div>
+                <div class="mid_col"><h1>Adicionados recentemente: </h1>
+                </div>
+                <div class="slideshow-container">
+                    <div class="mySlides fade">
+                       <div class="numbertext">1 / 3</div>
+                       <img src="_img/p1.png" style="width:100%" id="igamem">
+                       <div class="text">Produtos em destaque!</div>
+                       </div>
+                       <div class="mySlides fade">
+                          <div class="numbertext">2 / 3</div>
+                          <img src="_img/p2.jpg" style="width:100%;" id="igamem">
+                          <div class="text">Produtos em destaque!</div>
+                       </div>
+                       <div class="mySlides fade">
+                          <div class="numbertext">3 / 3</div>
+                          <img src="_img/p3.jpg" style="width:100%" id="igamem">
+                          <div class="text">Produtos em destaque!</div>
+                       </div>
+                       <a class="prev" onclick="plusSlides(-1)">❮</a>
+                       <a class="next" onclick="plusSlides(1)">❯</a>
+                 </div>
+                 <br>
+                 <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                 </div>
+                 <script>
+                    var slideIndex = 1;
+                    showSlides(slideIndex);
+                    function plusSlides(n) {
+                       showSlides(slideIndex += n);
+                    }
+                    function currentSlide(n) {
+                       showSlides(slideIndex = n);
+                    }
+                    function showSlides(n) {
+                       var i;
+                       var slides = document.getElementsByClassName("mySlides");
+                       var dots = document.getElementsByClassName("dot");
+                       if (n > slides.length) {slideIndex = 1}
+                       if (n < 1) {slideIndex = slides.length}
+                       for (i = 0; i < slides.length; i++) {
+                          slides[i].style.display = "none";
+                       }
+                       for (i = 0; i < dots.length; i++) {
+                          dots[i].className = dots[i].className.replace(" active", "");
+                       }
+                       slides[slideIndex-1].style.display = "block";
+                       dots[slideIndex-1].className += " active";
+                    }
+                 </script>
+            </div>
+            <div class="prod">
+               <div class="1">
+                   <div class="produtos">
+                   <a href="produto.html"><img src="_img/p1.png"class="media-object"  img-responsive img-thumbnail ></a>
+                   <div class="desc"><a>Brinco preto com cruz</a></div>
+                   <div class="preç"><a> R$9,99</a>
+                   </div>
+               </div>
+               <div class="produtos">
+                   <a href="produto.html"><img src="_img/p2.jpg"class="media-object"  img-responsive img-thumbnail ></a>
+                   <div class="desc"><a>Brinco de ponto prata/preto</a>
+                       <div class="preç"><a> R$10,99</a>
+                       </div>
+               </div>
+               </div>
+               <div class="2">
+                   <div class="produtos">
+                   <a href="produto.html"><img src="_img/p3.jpg"class="media-object"  img-responsive img-thumbnail ></a>
+                   <div class="desc"><a>Anel de caveira com coroa</a></div>
+                   <div class="preç"><a> R$16,99</a>
+                   </div>
+               </div>
+               <div class="produtos">
+                   <a href="produto.html"><img src="_img/p4.jpg"class="media-object"  img-responsive img-thumbnail ></a>
+                   <div class="desc"><a>Anel de prata com jóia vermelha</a>
+                       <div class="preç"><a> R$15,99</a>
+                       </div>
+               </div>
+               </div>
+               <div class="3">
+                   <div class="produtos">
+                   <a href="produto.html"><img src="_img/p5.jpg"class="media-object"  img-responsive img-thumbnail ></a>
+                   <div class="desc"><a>Colar de flor preto</a></div>
+                   <div class="preç"><a> R$20,99</a>
+                   </div>
+               </div>
+               <div class="produtos">
+                   <a href="produto.html"><img src="_img/p6.webp"class="media-object"  img-responsive img-thumbnail ></a>
+                   <div class="desc"><a>Colar com corrente preto</a>
+                       <div class="preç"><a> R$23,99</a>
+                       </div>
+               </div>
+               </div>
+               <div class="4">
+                   <div class="produtos">
+                   <a href="produto.html"><img src="_img/p7.jpeg"class="media-object"  img-responsive img-thumbnail ></a>
+                   <div class="desc"><a>Album Metallica Death Magnetic</a></div>
+                   <div class="preç"><a></a> R$49,99</a>
+                   </div>
+               </div>
+               <div class="produtos">
+                   <a href="produto.html"><img src="_img/p8.jpg"class="media-object"  img-responsive img-thumbnail ></a>
+                   <div class="desc"><a>Album Iron Maiden Senjutsu</a>
+                       <div class="preç"><a> R$69,99</a>
+                       </div>
+               </div>
+               </div>
+           </div>
+
+                
+                
+        
+    </body>
+</html>
